@@ -265,6 +265,10 @@ hr {
     .p-radio-buttons-text-mobile-down {
         color: #43a047;
         text-align: center;
+        padding-top: 14px;
+    }
+    .td-footer-text {
+        background-color: #ffffff;
     }
 }
 
