@@ -105,6 +105,7 @@ p {
     line-height: normal;
     letter-spacing: normal;
     color: #333333;
+    mso-line-height-rule: exactly;
 }
 
 .td-radio-buttons-text-left,
@@ -141,6 +142,7 @@ p {
     padding-left: 15px;
     width: 395px;
     height: 30px;
+    mso-line-height-rule: exactly;
 }
 
 hr {
@@ -163,6 +165,7 @@ hr {
     line-height: normal;
     letter-spacing: normal;
     color: #333333;
+    mso-line-height-rule: exactly;
 }
 
 .header-logo {
@@ -198,34 +201,33 @@ hr {
     letter-spacing: normal;
     text-align: center;
     color: #949494;
+    mso-line-height-rule: exactly;
 }
 
 .td-footer-text a {
     color: #1a77d2;
     text-decoration: none;
+    mso-line-height-rule: exactly;
 }
 
 .td-footer-wraper-img {
     margin: 0 auto;
     padding: 0;
     padding-top: 36.3px !important;
+    mso-line-height-rule: exactly;
 }
 
+.td-content-hr-mobile,
+.content-hr-mobile,
+.td-footer-text-mobile,
 .table-content-mobile {
     display: none;
 }
 
-
-/*media!*/
-
 @media screen and (max-device-width: 425px) {
-    html {
-        width: 100%;
-        height: 100%;
-    }
     body {
         width: 375px;
-        height: auto;
+        height: 1536px;
         background-color: #ffffff;
     }
     .td-header {
@@ -235,7 +237,9 @@ hr {
         width: 100%;
         display: inline-block;
     }
-    .table-content {
+    .table-content,
+    .td-content-hr,
+    .content-hr {
         display: none;
     }
     .table-content-mobile {
@@ -267,8 +271,49 @@ hr {
         text-align: center;
         padding-top: 14px;
     }
-    .td-footer-text {
+    .td-footer-text,
+    .wrap-table-footer,
+    .wrap-td-footer,
+    .table-in-footer {
         background-color: #ffffff;
+    }
+    .td-content-hr-mobile,
+    .content-hr-mobile,
+    .td-footer-text-mobile {
+        display: block;
+    }
+    .td-content-hr-mobile {
+        padding-top: 45px;
+    }
+    .content-hr-mobile {
+        width: 374px;
+        height: 0px;
+        border: solid 1px #f5f5f5;
+    }
+    .td-footer-text-mobile {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #333333;
+        mso-line-height-rule: exactly;
+        padding-bottom: 50px;
+    }
+    .td-footer-text p {
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #949494;
+        mso-line-height-rule: exactly;
+        padding-bottom: 30px;
     }
 }
 
