@@ -4,10 +4,11 @@
     <meta http-equiv="content-type" content="text/html" charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto, Arial, Helvetica&display=swap" rel="stylesheet">
     <style>
-        @import url(//db.onlinewebfonts.com/c/059288033e0f23aa4c5b19f0965ccc0d?family=Gotham+Pro+Medium);
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
         body {
-            font-family: "GothamPro", Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            src: url('//db.onlinewebfonts.com/c/059288033e0f23aa4c5b19f0965ccc0d?family=Gotham+Pro+Medium');
         }
 
         .block {
@@ -24,7 +25,7 @@
         }
 
         .wrap-table-email {
-            width: 635px;
+            width: 586px;
             height: auto;
             mso-line-height-rule: exactly;
         }
@@ -35,7 +36,7 @@
         }
 
         .header {
-            font-family: "GothamPro", Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 22px;
             font-weight: bold;
             font-stretch: normal;
@@ -48,8 +49,7 @@
         }
 
         .text-bold {
-            font-family: 'GothamPro', Arial, sans-serif;
-            width: 400px;
+            font-family: 'Montserrat', sans-serif;
             font-size: 20px;
             font-weight: 500;
             font-stretch: normal;
@@ -64,7 +64,7 @@
         }
 
         .text-medium {
-            font-family: 'GothamPro', Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 16px;
             font-weight: 500;
             font-stretch: normal;
@@ -77,7 +77,7 @@
         }
 
         .laba-white {
-            font-family: 'GothamPro', Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 70px;
             font-weight: bold;
             font-stretch: normal;
@@ -103,18 +103,99 @@
             font-weight: bold;
             color: #fb6233;
         }
+
         .black_a {
             font-weight: bold;
             color: #0a0a0a;
         }
 
-
         .table-text-ul {
             width: 500px;
         }
 
-        @media screen and (max-device-width: 768px) {
+        .afrer-laba {
+            position: relative;
+            z-index: 3;
+            width: 430px;
+        }
 
+        .afrer-laba::after {
+            content: "Laba";
+            font-family: 'Montserrat', sans-serif;
+            font-size: 70px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+            position: absolute;
+            z-index: -1;
+            right: -124px;
+            bottom: 0px;
+        }
+
+        .triangle-li {
+            list-style-type: none;
+            margin-bottom: 40px;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2a2a2a;
+            z-index: 3;
+            position: relative;
+            mso-line-height-rule: exactly;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .triangle-li::before {
+            border: 30px solid transparent;
+            content: '';
+            border-left: 43px solid #fff;
+            display: block;
+            position: absolute;
+            width: 0;
+            mso-line-height-rule: exactly;
+            height: 0;
+            z-index: -1;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 90%;
+        }
+
+        .star-after {
+            position: relative;
+            z-index: 5;
+        }
+
+        .star-after::after {
+            content: '';
+            background-image: url('https://l-a-b-a.com/uploads/email_image/st-20210302-105332.png');
+            position: absolute;
+            width: 40px;
+            height: 41px;
+            background-size: contain;
+            top: -15px;
+            left: 447px;
+            z-index: -1;
+        }
+
+        .br-show {
+            display: none;
+        }
+
+        @media screen and (max-device-width: 768px) {
             .wrap-table {
                 width: 570px;
                 height: auto;
@@ -124,12 +205,35 @@
                 width: 488px;
             }
 
-            .laba-white {
+            .header-td-first {
+                padding: 22px 0 0 0px !important;
+            }
+
+            .header-td-second {
+                padding: 29px 0 22px 0px !important;
+            }
+
+            .header-td-third {
+                padding: 22px 0 45px 0px !important;
+            }
+
+            .afrer-laba::after {
                 font-size: 50px !important;
+                right: -4px;
+                bottom: 20px;
             }
 
             .header {
                 font-size: 18px !important;
+            }
+
+            .triangle-li {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+            }
+
+            .star-after::after {
+                display: none;
             }
 
             .text-bold {
@@ -142,6 +246,99 @@
                 font-size: 14px !important;
                 line-height: 1.57 !important;
             }
+
+            .br-hide {
+                display: none;
+            }
+
+            .br-show {
+                display: block;
+            }
+
+            .triangle-li {
+                margin-bottom: 25px;
+            }
+
+            .content-header-tr td {
+                padding: 0px 0 29px 0px !important;
+            }
+
+            .triangle-li::before {
+                border: 30px solid transparent !important;
+                border-left: 30px solid #fff !important;
+            }
+
+            .triangle-li:last-child {
+                margin-bottom: 0;
+            }
+
+            .content-tr td {
+                padding: 0 0 30px 24px !important;
+            }
+
+            .tr-content-footer td {
+                padding: 0 0 38px !important;
+            }
+
+            .soon-tr td {
+                padding-top: 0 !important;
+            }
+
+        }
+
+        @media screen and (max-device-width: 414px) {
+            .wrap-table {
+                width: 360px;
+                height: auto;
+            }
+
+            .wrap-table-email {
+                width: 322px;
+            }
+
+            .text-bold,
+            .header,
+            .triangle-li,
+            .triangle-li a {
+                font-size: 12px !important;
+                line-height: 1.67 !important;
+                width: auto;
+            }
+
+            .header-td-third {
+                padding: 0 0 30px 0px !important;
+            }
+
+            .triangle-li::before {
+                border: 20px solid transparent !important;
+                border-left: 20px solid #fff !important;
+                right: 88%;
+            }
+
+            .text-medium,
+            .text-medium a {
+                font-size: 11px !important;
+                line-height: 1.67 !important;
+            }
+
+            .mob-hide {
+                display: none;
+            }
+
+            .content-tr td {
+                padding: 0 0 30px 12px !important;
+            }
+
+            .first-table {
+                padding: 48px 29px 0;
+            }
+
+            .afrer-laba::after {
+                font-size: 33px !important;
+                right: -4px;
+                bottom: -6px;
+            }
+
         }
     </style>
 </head>
@@ -156,49 +353,36 @@
                     <tbody>
                         <tr>
                             <td style="padding:0;margin:0;" valign="top" align="left">
-                                <table data-editable="text" style="padding: 58px 8px 0;" width="100%" cellspacing="0"
-                                    cellpadding="0" border="0" align="center">
+                                <table class="first-table" data-editable="text" style="padding: 58px 29px 0;"
+                                    width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                                     <tbody>
-                                        <tr>
-                                            <td style="padding:0px 0 5px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(255, 255, 255);"
+                                        <tr class="header-tr">
+                                            <td class="header-td-first"
+                                                style="padding:0px 0 35px 0px;margin:0;font-family:Arial, sans-serif;color:rgb(255, 255, 255);"
                                                 valign="top" align="left">
-                                                <span class="header" style="font-family:GothamPro,Arial,sans-serif;
+                                                <span class="header" style="font-family:'Montserrat',sans-serif;
                                                 ">
                                                     Здравствуйте.
                                                 </span>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="padding:0 0 0 15px;margin:0;width: 400px;font-family:GothamPro,Arial, sans-serif;"
+                                        <tr class="header-tr">
+                                            <td class="header-td-second"
+                                                style="padding:0;margin:0;width: 430px;font-family:'Montserrat', sans-serif;"
                                                 valign="top" align="left">
-                                                <span class="text-bold"> Я — ИМЯ, ваш
+                                                <p class="text-bold afrer-laba"> Я — ИМЯ, ваш
                                                     персональный
                                                     менеджер
                                                     во время
                                                     обучения в
-                                                    Laba.</span>
-                                            </td>
-                                            <td style="padding:0px 0 5px 15px;margin:0;font-family:GothamPro,Arial, sans-serif;"
-                                                valign="top" align="left">
-                                                <span class="laba-white" style="   
-                                                font-family: GothamPro,Arial,sans-serif;
-                                                font-size: 70px;
-                                                font-weight: bold;
-                                                font-stretch: normal;
-                                                font-style: normal;
-                                                line-height: normal;
-                                                letter-spacing: normal;
-                                                text-align: left;
-                                                color: #ffffff;
-                                                position: relative;
-                                                right: 81px;
-                                                z-index: 0;
-                                                bottom: 25px;">Laba</span>
+                                                    Laba.</p>
+
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="padding:35px 0 45px 15px;" valign="top" align="left" colspan="4">
-                                                <span class="text-bold" style="font-family:GothamPro,Arial,sans-serif;
+                                        <tr class="header-tr">
+                                            <td class="header-td-third" style="padding:35px 0 45px 0px;" valign="top"
+                                                align="left" colspan="4">
+                                                <span class="text-bold" style="font-family:'Montserrat',sans-serif;
                                                     font-size: 20px;
                                                     font-weight: 500;
                                                     font-stretch: normal;
@@ -215,10 +399,10 @@
                                                 </span>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="padding:0px 0 40px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(255, 255, 255);"
+                                        <tr class="content-header-tr">
+                                            <td style="padding:0px 0 40px 0px;margin:0;font-family:'Montserrat', sans-serif;color:rgb(255, 255, 255);"
                                                 valign="top" align="left" colspan="4">
-                                                <span class="header" style="font-family:GothamPro,Arial,sans-serif;
+                                                <span class="header" style="font-family:'Montserrat',sans-serif;
                                                 font-size: 22px;
                                                 font-weight: bold;
                                                 font-stretch: normal;
@@ -231,412 +415,79 @@
                                                 </span>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="padding:0;margin:0;" valign="top" align="center" colspan="4">
-                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                                    align="left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td width="34%" valign="top" align="center">
-                                                                <table width="100%" cellspacing="0" cellpadding="0"
-                                                                    border="0" align="left">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table data-editable="text" width="100%"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <div class="block">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table class="table-text-ul"
-                                                                                    data-editable="text" width="500px"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <span
-                                                                                                    class="text-medium"
-                                                                                                    style="
-                                                                                                font-family: GothamPro,Arial,sans-serif;
-                                                                                                width: 400px;
-                                                                                                font-size: 16px;
-                                                                                                font-weight: 500;
-                                                                                                font-stretch: normal;
-                                                                                                font-style: normal;
-                                                                                                line-height: 1.4;
-                                                                                                letter-spacing: normal;
-                                                                                                text-align: left;
-                                                                                                color: #2a2a2a;
-                                                                                                position: relative;
-                                                                                                top: -15px;
-                                                                                                left: -84px;
-                                                                                                z-index: 3;
-                                                                                                ">
-                                                                                                    <strong>внимательно
-                                                                                                        прочитайте <a
-                                                                                                            class="red_a"
-                                                                                                            href="#">гайд</a>
-                                                                                                        по
-                                                                                                        обучению.</strong>
-                                                                                                    <br />
-                                                                                                    Он поможет
-                                                                                                    разобраться в
-                                                                                                    настройках вашего
-                                                                                                    личного кабинета,
-                                                                                                    установить
-                                                                                                    необходимые
-                                                                                                    мессенджеры и софты
-                                                                                                    заранее
-                                                                                                </span>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                        <tr class="content-tr">
+                                            <td style="padding:10px 0 40px 24px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
+                                                valign="top" align="left" colspan="4">
+
+                                                <ul style="
+                                                font-family: 'Montserrat',sans-serif;
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                font-stretch: normal;
+                                                font-style: normal;
+                                                line-height: 1.4;
+                                                letter-spacing: normal;
+                                                text-align: left;
+                                                color: #2a2a2a;
+                                                position: relative;
+                                                z-index: 3;
+                                                ">
+                                                    <li class="triangle-li">
+                                                        <strong>внимательно
+                                                            прочитайте <a class="red_a" href="#">гайд</a>
+                                                            по <br class="br-show" />
+                                                            обучению.</strong>
+                                                        <br class="br-hide" />
+                                                        Он поможет
+                                                        разобраться в
+                                                        настройках вашего
+                                                        личного кабинета,
+                                                        установить
+                                                        необходимые
+                                                        мессенджеры и софты
+                                                        заранее
+                                                    </li>
+                                                    <li class="triangle-li">
+                                                        <strong>заполните
+                                                            небольшую <a class="red_a" href="#">анкету</a>
+                                                            ,</strong>
+                                                        которая поможет нам
+                                                        на вашем и
+                                                        последующих курсах
+                                                    </li>
+                                                    <li class="triangle-li">
+                                                        скачайте ZOOM, чтобы
+                                                        подключиться к<br class="mob-hide" />
+                                                        вебинару
+                                                    </li>
+                                                    <li class="triangle-li">
+                                                        установите
+                                                        <strong>Excel версии
+                                                            не старее 2016
+                                                            года,</strong><br class="tablet-hide" />
+                                                        чтобы при работе с
+                                                        файлами у вас не
+                                                        возникало сложностей
+                                                    </li>
+                                                    <li class="triangle-li">
+                                                        <strong>обращаем ваше
+                                                            внимание
+                                                        </strong>на то, если
+                                                        вы пользователь
+                                                        <strong>MacBook</strong>,
+                                                        то некоторые
+                                                        возможности Excel
+                                                        для вас будут
+                                                        <strong>недоступны.</strong>
+                                                    </li>
+                                                </ul>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="padding:0;margin:0;" valign="top" align="center" colspan="4">
-                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                                    align="left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td width="34%" valign="top" align="center">
-                                                                <table width="100%" cellspacing="0" cellpadding="0"
-                                                                    border="0" align="left">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table data-editable="text" width="100%"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <div class="block">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table class="table-text-ul"
-                                                                                    data-editable="text" width="500px"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <span
-                                                                                                    class="text-medium"
-                                                                                                    style="
-                                                                                                font-family: GothamPro,Arial,sans-serif;
-                                                                                                width: 400px;
-                                                                                                font-size: 16px;
-                                                                                                font-weight: 500;
-                                                                                                font-stretch: normal;
-                                                                                                font-style: normal;
-                                                                                                line-height: 1.4;
-                                                                                                letter-spacing: normal;
-                                                                                                text-align: left;
-                                                                                                color: #2a2a2a;
-                                                                                                position: relative;
-                                                                                                top: 8px;
-                                                                                                left: -84px;
-                                                                                                z-index: 3;
-                                                                                                ">
-                                                                                                    <strong>заполните
-                                                                                                        небольшую <a
-                                                                                                            class="red_a"
-                                                                                                            href="#">анкету</a>
-                                                                                                        ,</strong>
-                                                                                                    <br />
-                                                                                                    которая поможет нам
-                                                                                                    на вашем и
-                                                                                                    последующих курсах
-                                                                                                </span>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding:0;margin:0;" valign="top" align="center" colspan="4">
-                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                                    align="left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td width="34%" valign="top" align="center">
-                                                                <table width="100%" cellspacing="0" cellpadding="0"
-                                                                    border="0" align="left">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table data-editable="text" width="100%"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <div class="block">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table class="table-text-ul"
-                                                                                    data-editable="text" width="500px"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <span
-                                                                                                    class="text-medium"
-                                                                                                    style="
-                                                                                                font-family: GothamPro,Arial,sans-serif;
-                                                                                                width: 400px;
-                                                                                                font-size: 16px;
-                                                                                                font-weight: 500;
-                                                                                                font-stretch: normal;
-                                                                                                font-style: normal;
-                                                                                                line-height: 1.4;
-                                                                                                letter-spacing: normal;
-                                                                                                text-align: left;
-                                                                                                color: #2a2a2a;
-                                                                                                position: relative;
-                                                                                                top: 19px;
-                                                                                                left: -84px;
-                                                                                                z-index: 3;
-                                                                                                ">
-                                                                                                    скачайте ZOOM, чтобы
-                                                                                                    подключиться к
-                                                                                                    вебинару
-                                                                                                </span>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding:0;margin:0;" valign="top" align="center" colspan="4">
-                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                                    align="left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td width="34%" valign="top" align="center">
-                                                                <table width="100%" cellspacing="0" cellpadding="0"
-                                                                    border="0" align="left">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table data-editable="text" width="100%"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <div class="block">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table class="table-text-ul"
-                                                                                    data-editable="text" width="500px"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <span
-                                                                                                    class="text-medium"
-                                                                                                    style="
-                                                                                                font-family: GothamPro,Arial,sans-serif;
-                                                                                                width: 400px;
-                                                                                                font-size: 16px;
-                                                                                                font-weight: 500;
-                                                                                                font-stretch: normal;
-                                                                                                font-style: normal;
-                                                                                                line-height: 1.4;
-                                                                                                letter-spacing: normal;
-                                                                                                text-align: left;
-                                                                                                color: #2a2a2a;
-                                                                                                position: relative;
-                                                                                                top: 8px;
-                                                                                                left: -84px;
-                                                                                                z-index: 3;
-                                                                                                ">установите
-                                                                                                    <strong>Excel версии
-                                                                                                        не старее 2016
-                                                                                                        года,</strong><br />
-                                                                                                    чтобы при работе с
-                                                                                                    файлами у вас не
-                                                                                                    возникало сложностей
-                                                                                                </span>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding:0;margin:0;" valign="top" align="center" colspan="4">
-                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                                    align="left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td width="34%" valign="top" align="center">
-                                                                <table width="100%" cellspacing="0" cellpadding="0"
-                                                                    border="0" align="left">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table data-editable="text" width="100%"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <div class="block">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                            <td style="margin:0;padding:0;" valign="top"
-                                                                                align="left">
-                                                                                <table class="table-text-ul"
-                                                                                    data-editable="text" width="500px"
-                                                                                    cellspacing="0" cellpadding="0"
-                                                                                    border="0" align="center">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
-                                                                                                valign="top"
-                                                                                                align="left">
-                                                                                                <span
-                                                                                                    class="text-medium"
-                                                                                                    style="
-                                                                                                font-family: GothamPro,Arial,sans-serif;
-                                                                                                width: 400px;
-                                                                                                font-size: 16px;
-                                                                                                font-weight: 500;
-                                                                                                font-stretch: normal;
-                                                                                                font-style: normal;
-                                                                                                line-height: 1.4;
-                                                                                                letter-spacing: normal;
-                                                                                                text-align: left;
-                                                                                                color: #2a2a2a;
-                                                                                                position: relative;
-                                                                                                top: -3px;
-                                                                                                left: -84px;
-                                                                                                z-index: 3;
-                                                                                                "><strong>обращаем ваше
-                                                                                                        внимание
-                                                                                                    </strong>на то, если
-                                                                                                    вы пользователь
-                                                                                                    <strong>MacBook</strong>,
-                                                                                                    то некоторые
-                                                                                                    возможности Excel
-                                                                                                    для вас будут
-                                                                                                    <strong>недоступны.</strong>
-                                                                                                </span>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                        <tr class="tr-content-footer">
                                             <td colspan="4"
-                                                style="padding:35px 135px 50px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(255, 255, 255);"
+                                                style="padding:0 0 50px;margin:0;font-family:Arial, sans-serif;color:rgb(255, 255, 255);"
                                                 valign="top" align="left">
-                                                <span class="text-medium" style="font-family:GothamPro,Arial,sans-serif;
+                                                <p class="text-medium star-after" style="font-family:'Montserrat',sans-serif;
                                                 font-size: 16px;
                                                 font-weight: 500;
                                                 font-stretch: normal;
@@ -648,9 +499,10 @@
                                                     Общение с преподавателем и вашими коллегами будет проходить в <a
                                                         class="red_a" href="#">Telegram-чате</a> — вы можете
                                                     подключиться к нему прямо сейчас.
-                                                </span>
+                                                </p>
                                             </td>
                                         </tr>
+
                                     </tbody>
                                 </table>
                             </td>
@@ -666,11 +518,11 @@
                     <tbody>
                         <tr>
                             <td style="padding:0;margin:0;" valign="top" align="left">
-                                <table data-editable="text" style="padding: 40px 8px 0;" width="100%" cellspacing="0"
+                                <table data-editable="text" style="padding: 40px 29px 0;" width="100%" cellspacing="0"
                                     cellpadding="0" border="0" align="center">
                                     <tbody>
                                         <tr>
-                                            <td style="padding:0px 0 5px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(255, 255, 255);"
+                                            <td style="padding:0px 0 5px 0px;margin:0;font-family:'Montserrat', sans-serif;color:rgb(255, 255, 255);"
                                                 valign="top" align="left">
                                                 <span class="text-medium" style="font-family:GothamPro,Arial,sans-serif;
                                                 font-size: 16px;
@@ -702,9 +554,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding-top:10px;padding-left:15px;padding-bottom: 30px;margin:0;"
-                                                valign="top" align="left">
-                                                <span class="text-medium" style="font-family:GothamPro,Arial,sans-serif;
+                                            <td style="padding-top:10px;padding-bottom: 30px;margin:0;" valign="top"
+                                                align="left">
+                                                <span class="text-medium" style="font-family:'Montserrat',sans-serif;
                                                 font-size: 16px;
                                                 font-weight: 500;
                                                 font-stretch: normal;
@@ -733,13 +585,13 @@
                     <tbody>
                         <tr>
                             <td style="padding:0;margin:0;" valign="top" align="left">
-                                <table data-editable="text" style="padding: 40px 8px 0;" width="100%" cellspacing="0"
+                                <table data-editable="text" style="padding: 40px 29px 0;" width="100%" cellspacing="0"
                                     cellpadding="0" border="0" align="center">
                                     <tbody>
                                         <tr>
-                                            <td style="padding:0px 0 5px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(255, 255, 255);"
+                                            <td style="padding:0px 0 5px 0;margin:0;font-family:'Montserrat', sans-serif;color:rgb(255, 255, 255);"
                                                 valign="top" align="left">
-                                                <span class="text-medium" style="font-family:GothamPro,Arial,sans-serif;
+                                                <span class="text-medium" style="font-family:'Montserrat',sans-serif;
                                                 font-size: 16px;
                                                 font-weight: 500;
                                                 font-stretch: normal;
@@ -753,9 +605,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding-top:10px;padding-left:15px;padding-bottom: 30px;margin:0;"
-                                                valign="top" align="left">
-                                                <span class="text-medium" style="font-family:GothamPro,Arial,sans-serif;
+                                            <td style="padding-top:10px;padding-bottom: 30px;margin:0;" valign="top"
+                                                align="left">
+                                                <span class="text-medium" style="font-family:'Montserrat',Arial,sans-serif;
                                                 font-size: 16px;
                                                 font-weight: 500;
                                                 font-stretch: normal;
@@ -771,9 +623,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding-top:10px;padding-left:15px;padding-bottom: 30px;margin:0;"
-                                                valign="top" align="left">
-                                                <span class="text-medium" style="font-family:GothamPro,Arial,sans-serif;
+                                            <td style="padding-top:10px;padding-bottom: 30px;margin:0;" valign="top"
+                                                align="left">
+                                                <span class="text-medium" style="font-family:'Montserrat',sans-serif;
                                                 font-size: 16px;
                                                 font-weight: 500;
                                                 font-stretch: normal;
@@ -782,15 +634,19 @@
                                                 letter-spacing: normal;
                                                 text-align: left;
                                                 color: #2a2a2a;">
-                                                    Если вы <strong>самостоятельно оплатили участие</strong> и вам нужна помощь с
+                                                    Если вы <strong>самостоятельно оплатили участие</strong> и вам нужна
+                                                    помощь с
                                                     трудоустройством — пишите нашему куратору <strong>Свете на почту
-                                                    <a class='black_a'href="s.vlasenko@inlaba.email">s.vlasenko@inlaba.email</a> или в Telegram <a class='black_a' href="@dreamcareer_laba">@dreamcareer_laba</a>.</strong>
+                                                        <a class='black_a'
+                                                            href="s.vlasenko@inlaba.email">s.vlasenko@inlaba.email</a>
+                                                        или в Telegram <a class='black_a'
+                                                            href="@dreamcareer_laba">@dreamcareer_laba</a>.</strong>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="padding-top:10px;padding-left:15px;padding-bottom: 30px;margin:0;"
-                                                valign="top" align="left">
-                                                <span class="text-medium" style="font-family:GothamPro,Arial,sans-serif;
+                                        <tr class="soon-tr">
+                                            <td style="padding-top:10px;padding-bottom: 30px;margin:0;" valign="top"
+                                                align="left">
+                                                <span class="text-medium" style="font-family:'Montserrat',sans-serif;
                                                 font-size: 16px;
                                                 font-weight: 500;
                                                 font-stretch: normal;
@@ -821,9 +677,9 @@
                                     cellpadding="0" border="0" align="center">
                                     <tbody>
                                         <tr>
-                                            <td style="padding:0px 0 5px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(255, 255, 255);"
+                                            <td style="padding:0px 0 5px 15px;margin:0;font-family:'Montserrat', sans-serif;color:rgb(255, 255, 255);"
                                                 valign="top" align="left">
-                                                <span class="text-medium" style="font-family:GothamPro,Arial,sans-serif;
+                                                <span class="text-medium" style="font-family:'Montserrat',sans-serif;
                                                 font-size: 16px;
                                                 font-weight: 500;
                                                 font-stretch: normal;
@@ -863,7 +719,7 @@
                                                                                     border="0" align="center">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
+                                                                                            <td style="padding:10px 15px;margin:0;font-family:'Montserrat', sans-serif;color:rgb(178, 178, 178);"
                                                                                                 valign="top"
                                                                                                 align="left">
                                                                                                 <svg class="laba_svg"
@@ -886,7 +742,7 @@
                                                                                     border="0" align="center">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td style="padding:10px 15px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
+                                                                                            <td style="padding:10px 15px;margin:0;font-family:'Montserrat', sans-serif;color:rgb(178, 178, 178);"
                                                                                                 valign="top"
                                                                                                 align="right">
                                                                                                 <a style="
